@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">internshalla_2screen</string>
+    <string name="save_amp_explore"><![CDATA[Save & Explore]]></string>
+    <string name="chat">Chat</string>
+    <string name="refine">Refine</string>
+</resources>

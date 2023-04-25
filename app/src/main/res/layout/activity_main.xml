@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:id="@+id/LL_bar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="6"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="3sp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/menu" />
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="4"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="3sp"
+                           android:text="Howdy"
+                           android:textColor="@color/black"
+                           android:textSize="18sp"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="3sp"
+                           android:text="Varnit Kumar"
+                           android:textColor="@color/black"
+                           android:textSize="18sp"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="3sp"
+                           android:text="!!"
+                           android:textColor="@color/black"
+                           android:textSize="18sp"
+                           android:textStyle="bold" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="3sp"
+                           android:src="@drawable/baseline_location_on_24" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="3sp"
+                           android:text="Morkukka"
+                           android:textColor="@color/black"
+                           android:textSize="18sp"
+                           android:textStyle="bold" />
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_margin="3sp"
+                   android:layout_weight="1"
+                   android:gravity="center">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+
+                       android:src="@drawable/bellicon" />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:id="@+id/LL_select_availability"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/LL_bar">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Select your Availability"
+                           android:layout_margin="6sp"
+                           android:textSize="18sp"
+
+                           android:textStyle="bold"
+                           android:textColor="#5B2C6F"/>
+
+
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="16sp"
+                           android:layout_marginTop="8sp"
+                           android:layout_marginEnd="16sp"
+                           android:layout_marginBottom="16sp"
+                           android:hint="Available | Hey Let us Connect"
+                           android:background="@drawable/edit_text_background"
+                           android:padding="11sp"
+                           android:textColor="#5B2C6F"
+                           android:textColorHint="#5B2C6F"
+                           tools:ignore="TouchTargetSizeCheck" />
+
+                   </LinearLayout>
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/baseline_keyboard_arrow_down_24"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       android:layout_marginEnd="25sp"
+                       android:layout_marginTop="25sp"/>
+
+
+
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/LL_yourstatus"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/LL_select_availability">
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Add Your Status "
+                   android:layout_margin="6sp"
+                   android:textSize="18sp"
+                   android:textStyle="bold"
+                   android:textColor="#5B2C6F"/>
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/name_signup"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="16sp"
+                   android:layout_marginTop="8sp"
+                   android:layout_marginEnd="16sp"
+                   android:hint="Hi community ! i am open to new connections"
+                   android:background="@drawable/edit_text_background"
+                   android:padding="11sp"
+                   android:textColor="#5B2C6F"
+                   android:textColorHint="#5B2C6F"
+                   tools:ignore="TouchTargetSizeCheck" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginEnd="20sp"
+                   android:layout_gravity="end"
+                   android:layout_marginBottom="20sp"
+                   android:gravity="end">
+
+                   <TextView
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="47"
+                       android:layout_margin="2sp"
+                       android:textSize="18sp"
+                       android:layout_gravity="end"
+                       android:textColor="#5B2C6F"/>
+
+                   <TextView
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="/"
+                       android:layout_margin="2sp"
+                       android:textSize="18sp"
+                       android:layout_gravity="end"
+                       android:textColor="#5B2C6F"/>
+
+                   <TextView
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="250"
+                       android:layout_margin="2sp"
+                       android:textSize="18sp"
+                       android:layout_gravity="end"
+                       android:textColor="#5B2C6F"/>
+
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/LL_selecthyper"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               app:layout_constraintTop_toBottomOf="@id/LL_yourstatus"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent">
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Select Hyper local Distance"
+                   android:layout_marginStart="8sp"
+                   android:textStyle="bold"
+                   android:textSize="18sp"
+                   android:textColor="#5B2C6F"/>
+
+               <SeekBar
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12sp"
+                   android:layout_marginStart="6sp"
+                   android:layout_marginEnd="6sp"/>
+
+               <LinearLayout
+                   android:id="@+id/LL_distance"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:weightSum="2"
+                   android:orientation="horizontal">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:orientation="horizontal">
+
+                       <TextView
+
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="1"
+                           android:layout_marginStart="20sp"
+                           android:textSize="18sp"
+                           android:layout_gravity="start"
+                           android:textColor="#5B2C6F"/>
+
+                       <TextView
+
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="km"
+                           android:layout_marginStart="6sp"
+                           android:textSize="18sp"
+                           android:layout_gravity="start"
+                           android:textColor="#5B2C6F"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="end"
+                       android:layout_marginEnd="25sp"
+                       android:orientation="horizontal">
+
+                       <TextView
+
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="47"
+                           android:layout_marginStart="20sp"
+                           android:textSize="18sp"
+                           android:layout_gravity="start"
+                           android:textColor="#5B2C6F"/>
+
+                       <TextView
+
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="km"
+                           android:layout_marginStart="6sp"
+                           android:textSize="18sp"
+                           android:layout_gravity="start"
+                           android:textColor="#5B2C6F"/>
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="20sp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/LL_selecthyper"/>
+
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
